@@ -30,7 +30,7 @@ build:
   SAVE ARTIFACT output output
 
 docker:
-  FROM alipine+alpine:3.19.1
+  FROM alipine+alpine3.19.1
   COPY +build/output .
   ENTRYPOINT ["./output"]
   SAVE IMAGE --push lugendre/earthly-haskell/examples:haskell
